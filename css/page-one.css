@@ -39,53 +39,84 @@
 
 /*********** Slider ************/
 
-.slider {
-  max-width: 1586.509px;
-  margin: 105px 0 0 auto;
-}
-.slides {
+.slider{
   width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  height: 100vh;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.picture-one {
-  margin-top: 70px;
+
+.slides{
+  width: 707px;
   height: 597px;
-  width: 97%;
-  min-width: 162px;
+  display: flex;
 }
-.picture-two {
-  width: 100%;
-  height: 800px;
-  min-width: 248px;
-}
-.slide{
-  height: 800px;
-  transition: 2s;
-}
+
 .slides input{
   display: none;
 }
 
+.slide{
+  width: 100%;
+  transition: 2s;
+}
+.first{
+  margin-right: 25px;
+}
+.second{
+  width: 948px;
+  height: 800px;
+  margin-right: 100px;
+}
+/* .slide img{
+  width: 948px;
+  height: 500px;
+} */
+/* .picture-one{
+  width: 50%;
+  height: 50%; 
+  margin: auto;
+
+}
+.picture-two{
+  width: 948px;
+  height: 800px;
+} */
+
+/*css for manual slide navigation*/
+
 .navigation-manual{
- 
+  position: absolute;
   width: 800px;
-  
+  margin-top: -40px;
   display: flex;
   justify-content: center;
 }
 
 .manual-btn{
-  border: 2px solid rgb(148, 2, 63);
-  pad: 5px;
-  border-radius:10px ;
-  cursor:pointer;
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
   transition: 1s;
-  width: 20px;
-  height: 20px;
 }
 
 .manual-btn:not(:last-child){
   margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 20%;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -60%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -140%;
 }
