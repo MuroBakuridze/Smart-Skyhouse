@@ -68,20 +68,7 @@
   height: 800px;
   margin-right: 100px;
 }
-/* .slide img{
-  width: 948px;
-  height: 500px;
-} */
-/* .picture-one{
-  width: 50%;
-  height: 50%; 
-  margin: auto;
 
-}
-.picture-two{
-  width: 948px;
-  height: 800px;
-} */
 
 /*css for manual slide navigation*/
 
@@ -111,12 +98,19 @@
 
 #radio1:checked ~ .first{
   margin-left: 20%;
+
 }
 
 #radio2:checked ~ .first{
   margin-left: -60%;
+
 }
 
 #radio3:checked ~ .first{
   margin-left: -140%;
+}
+
+#radio2:checked ~ .picture-two{
+  height: 50%;
+  width: 50%;
 }
