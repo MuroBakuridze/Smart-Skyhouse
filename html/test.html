@@ -73,16 +73,14 @@
         justify-content: space-between;
       }
       
-      .swiper-button-next,.swiper-button-prev{
-        position: absolute;
+      .swiper-button-next::after,.swiper-button-prev::after{
+        content: none;
       }
-      /* .swiper-buttons{
-        width: 500px;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        padding: 200px;
-      } */
+      .swiper-button-next,.swiper-button-prev{
+        margin-top: 350px;
+        background-color: rebeccapurple;
+        right: 10px;
+      }
 
     </style>
 
@@ -103,14 +101,14 @@
         </div>
        
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+     
       
     </div>
     <div class="swiper-pagination"></div>
-    <div class="buttons">
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+
+    <div class="muro">
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
     <!-- Swiper JS -->
