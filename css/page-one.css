@@ -209,7 +209,7 @@
 .fourth-section{
   max-width: 1920px;
   width: 100%;
-  padding-top: 176px;
+  padding: 176px 0 170px;
 }
 .projects{
   width: 100%;
@@ -316,4 +316,76 @@
   font-weight: bold;
   padding: 5px 0 5px 20px;
   border-left: 1px solid black;
+}
+
+/********** Fifth Section ***********/
+
+.fifth-section{
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 0 170px;
+  padding-left: 240px;
+}
+.partners{
+  display: flex;
+  justify-content: space-between;
+}
+.partners-title{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom:60px;
+}
+.partners-text{
+  width: 463px;
+  font-size: 16px;
+}
+.a-tag-txt{
+  color:#0A22F4;
+}
+
+
+/* Partners Swiper */
+
+.swiper-container-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide-1 img {
+  display: block;
+  width: 20%;
+  height: 30%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
 }
