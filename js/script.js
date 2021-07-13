@@ -9,11 +9,3 @@ var swiper = new Swiper(".mySwiper1", {
 
 
 
-var swiper2 = new Swiper(".mySwiper2", {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swp2",
-    clickable: true,
-  },
-});
