@@ -364,7 +364,7 @@
   width: 100%;
   display: flex;
 }
-.footer-contacts{
+.footer-contacts,.contact-form{
   width: 50%;
 }
 .footer-cont{
@@ -383,12 +383,15 @@
 }
 .tel-mail{
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 }
 .tel,.mail{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.tel{
+  margin-right: 30px;
 }
 
 .number,.mail-t{
@@ -403,4 +406,60 @@
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+}
+.contact-form{
+  padding: 100px 0 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+#name,#email,#tel{
+  background-color: #0A22F4;
+  width: 60%;
+  height: 61px;
+  position: relative;
+  margin-bottom: 20px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  outline: none;
+  border-bottom: 3px solid #fff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+#text{
+  background-color: #0A22F4;
+  width: 60%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  outline:none;
+  border-bottom: 3px solid #fff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+::placeholder{
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+}
+.button{
+  width: 60%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#send{
+  width: 156px;
+  padding: 20px;
+  border-radius: 30px;
+  outline: none;
+  border-style: hidden;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }

@@ -25,44 +25,29 @@
             <input class="email" type="email" id="email" name="email" placeholder="ელ.ფოსტა" required>
           </div>
           <div class="pass-input">
-            <input class="password "type="tel" id="phone" name="phone" placeholder="ტელეფონის ნომერი" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <input class="password" type="tel" id="phone" name="phone" placeholder="ტელეფონის ნომერი" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <div class="pass-error" id="pass-error"></div>
           </div>
           <div class="confirm-input">
-            <input class="confirm" id="confirm" name="confirm" type="password" placeholder="Confirm Password" >
+            <input class="confirm" id="confirm" name="confirm" type="text" placeholder="შეტყობინება" >
             <div class="confirm-error" id="confirm-error"></div>
           </div>
         </div>
-        <div class="agree">
-          <div class="agree-terms">
-            <input type="checkbox" value="i-agree-terms" id="agreement">
-            <label class="agr" for="agreement">I agree with terms and conditions</label>
-          </div>
-        </div>
+        
         <div class="buttons">
-          <button id="sign-up" class="sign-btn" type="signup">Sign up</button>
-        </div>
-        <div class="already-have">
-          <a href="./index.html">
-            <p class="alr-txt">Already have an account? Sign in.</p>
-          </a>
+          <button id="sign-up" class="sign-btn" type="signup">გაგზავნა</button>
         </div>
       </form>
-      <div class="terms">
-        <a href="#">
-          <p class="trm-txt">Term of use. Privacy policy</p>
-        </a>
-      </div>
     </div>
-
   </div>
 
 <script>
-  const firstName = document.getElementById('first-name')
-const lastName = document.getElementById('last-name')
-const userName = document.getElementById('name')
+const firstName = document.getElementById('first-name')
+// const lastName = document.getElementById('last-name')
+// const userName = document.getElementById('name')
 const email = document.getElementById('email')
 const password = document.getElementById('password')
-const confirmed = document.getElementById('confirm')
+// const confirmed = document.getElementById('confirm')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
 const signup = document.getElementById('sign-up')
