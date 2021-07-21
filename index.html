@@ -19,64 +19,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Main Page</title>
 </head>
+
 <body>
-  <section class="main-section container">
-    <header class="head">
-      <div class="logo">
-        <a href="#" class="logo-atag">
-          <img class="logo-img" src="/images/homepage/logo.svg" alt="logo">
-        </a>
-        <a href="#" class="sky-house">
-          <img class="logo-txt" src="/images/homepage/ENG (RussoOne-Regular).svg" alt="logo-img">
-        </a>
-      </div>
-      <div class="navigation">
-        <ul class="nav-list">
-            <li class="nav-btn">
-              <a class="nav-atag" href="#">
-                <p class="nav-txt">
-                  მთავარი
-                </p>
-              </a>
-            </li>
-            <li class="nav-btn">
-              <a class="nav-atag" href="#">
-                <p class="nav-txt">
-                  ჩვენ შესახებ
-                </p>
-              </a>
-            </li>
-            <li class="nav-btn">
-              <a class="nav-atag" href="#">
-                <p class="nav-txt">
-                  სევისები
-                </p>
-              </a>
-            </li>
-            <li class="nav-btn">
-              <a class="nav-atag" href="#">
-                <p class="nav-txt">
-                  პროექტები
-                </p>
-              </a>
-            </li>
-            <li class="nav-btn">
-              <a class="nav-atag" href="#">
-                <p class="nav-txt">
-                  პარტნიორები
-                </p>
-              </a>
-            </li>
-            <li class="nav-btn">
-              <a class="nav-atag" href="#">
-                <p class="nav-txt">
-                  კონტაქტი
-                </p>
-              </a>
-            </li>
-        </ul>
-      </div>
-    </header>
+  <div class="container">
+  <header class="head">
+    <div class="logo">
+      <a href="#" class="logo-atag">
+        <img class="logo-img" src="/images/homepage/logo.svg" alt="logo">
+      </a>
+      <a href="#" class="sky-house">
+        <img class="logo-txt" src="/images/homepage/ENG (RussoOne-Regular).svg" alt="logo-img">
+      </a>
+    </div>
+    <div class="navigation">
+      <ul class="nav-list">
+          <li class="nav-btn">
+            <a class="nav-atag" href="#home">
+              <p class="nav-txt">
+                მთავარი
+              </p>
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a class="nav-atag" href="#about">
+              <p class="nav-txt">
+                ჩვენ შესახებ
+              </p>
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a class="nav-atag" href="#service">
+              <p class="nav-txt">
+                სევისები
+              </p>
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a class="nav-atag" href="#project">
+              <p class="nav-txt">
+                პროექტები
+              </p>
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a class="nav-atag" href="#partner">
+              <p class="nav-txt">
+                პარტნიორები
+              </p>
+            </a>
+          </li>
+          <li class="nav-btn">
+            <a class="nav-atag" href="#contact">
+              <p class="nav-txt">
+                კონტაქტი
+              </p>
+            </a>
+          </li>
+      </ul>
+    </div>
+  </header>
+  <section class="main-section container" id="home">
+   
           <!-- Swiper -->
       <div class="swiper-container mySwiper container1">
         <div class="swiper-wrapper">
@@ -98,32 +101,8 @@
           </div>
                <div class="swiper-pagination pagination1"></div>
       </div>
-
-
-
-
-
-    <!-- <div class="swiper-container mySwiper1 container1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slide1">
-          <img class="picture-one" src="/images/homepage/left pic.svg" alt="pic">
-        </div>
-        <div class="swiper-slide slide1">
-          <img class="picture-two" src="/images/homepage/right pic.svg" alt="pic">
-        </div>
-        <div class="swiper-slide slide1 ">
-          <img class="picture-three" src="/images/homepage/left pic.svg" alt="pic">
-        </div>
-      </div>
-      <div class="swiper-button-next muro"></div>
-      <div class="swiper-button-prev muro"></div>
-      <div class="swiper-pagination"></div>
-    </div> -->
-
-    <!-- imege slider start -->
-
   </section>
-  <section class="second-section">
+  <section class="second-section" id="about">
     <div class="about-us">
       <div class="text-container">
         <h1 class="about-title">
@@ -145,7 +124,7 @@
       </div>
     </div>
   </section>
-  <section class="third-section">
+  <section class="third-section" id="service">
     <div class="services">
       <div class="services-pic">
         <img class="services-pic-img" src="/images/homepage/services.svg" alt="services-img">
@@ -161,7 +140,7 @@
     </div>
     </div>
   </section>
-  <section class="fourth-section">
+  <section class="fourth-section" id="project">
     <div class="projects">
       <h1 class="proj-title">
         პროექტები
@@ -218,7 +197,7 @@
       </a>
     </div>
   </section>
-  <section class="fifth-section">
+  <section class="fifth-section" id="partner">
     <div class="partners">
       <div class="partners-posts">
         <h1 class="partners-title">
@@ -243,7 +222,7 @@
       </div>
     </div>
   </section>
-  <section class="sixth-section">
+  <section class="sixth-section" id="contact">
     <footer class="footer">
       <div class="footer-contacts">
         <h1 class="footer-cont">
@@ -313,5 +292,7 @@
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="/js/script.js"></script>
+</div>
 </body>
+
 </html>

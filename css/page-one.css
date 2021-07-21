@@ -1,19 +1,40 @@
+body{
+  background-color: #0020F4;
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory; */
+}
 .main-section {
   max-width: 1920px;
   width: 100%;
-  /* height: 1080px; */
+  height: 100%;
   background-color: #0020F4;
   padding-left: 240px;
+  scroll-snap-align: center;
+  overflow: hidden;
 }
 .head {
-  position: relative;
-  padding-top: 40px;
-  max-width: 1443px;
+  position: fixed;
+  /* background-color: rgba(0, 122, 255, 0.9); */
+  background-color: #0020F4;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 40px 0 12px 240px;
+  /* border-bottom: 1px solid #fff; */
+  max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 0;
+  z-index: 10;
 }
 .logo {
   display: flex;
@@ -44,7 +65,7 @@
 /*********** Slider 1 ************/
 
 .container1 {
-  margin: 110px 0px -65px 0px !important;
+  margin: 210px 0px -65px 0px !important;
   width: 100%;
   height: 100%;
 }
@@ -110,112 +131,19 @@
   height: 10px !important;
 }
 
-
-
-/* .container2 {
-  width: 100%;
-  height: 500px;
-  margin: 0 0 65px 240px;
-}
-
-.slide1 {
-  text-align: center;
-  font-size: 18px;
-
-  border-radius: 4%;
-
- 
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.slide1 img{
-  border-radius: 2%;
-  display: block;
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  
-}
-.picture-one,.picture-two{
-
-  width: 100%;
-  position: 0;
-  margin: 109px 120px 65px 20px;
-}
-.picture-three{
-  width: 100%;
-  position: 0;
-  margin: 109px 0 65px 20px;
-
-}
-.muro{
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  padding-top: 300px;
-} */
-
-
-/********css for manual slide navigation********/
-
-.navigation-manual{
-  position: absolute;
-  width: 70px;
-  margin-top: 45px;
-  display: flex;
-  justify-content: start;
-}
-
-.manual-btn{
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-  background-color: grey;
-}
-
-.manual-btn:not(:last-child){
-  margin-right: 20px;
-}
-
-.manual-btn:hover{
-  background: #ffffff;
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0%;
-}
-
-#radio2:checked ~ .first{
-  margin-left: -31%;
-}
-
-#radio3:checked ~ .first{
-  margin-left: -81%;
-}
-
-
 /********** Second Section **************/
 
 .second-section{
   max-width: 1920px;
   width: 100%;
   padding: 176px 0 0 240px;
+  background-color: #fff;
+  scroll-snap-align: center;
 }
 
 .about-us{
   display: flex;
+  
 }
 .about-pic{
   margin-left: 140px;
@@ -227,25 +155,11 @@
   width: 707px;
   border-radius: 1em;
   margin: 224px 0 200px 140px;
-  /* border-radius: 1%; */
   position: relative;
-
- 
   box-shadow: 13px 13px 0px 0px #289FED,157px 58px 92px 40px rgba(10,171,244,0.3);
   -webkit-box-shadow: 13px 13px 0px 0px #289FED, 157px 58px 92px 40px rgba(10,171,244,0.3);
   -moz-box-shadow: 13px 13px 0px 0px #289FED, 157px 58px 92px 40px rgba(10,171,244,0.3);
-  
 } 
-/* .box-shadow{
-  width: 107px;
-  height: 107px;
-  background-color: #ffffff;
-  margin-right: -800px;
-  margin-top: 235px;
-  box-shadow: 197px 360px 40px 342px rgba(10,171,244,0.28);
-  transform: rotate(25deg);
-} */
-
 .text-container{
   width: 463px;
 }
@@ -264,11 +178,12 @@
 
 /********** Third Section **************/
 
-
 .third-section{
+  background-color: #fff;
   max-width: 1920px;
   width: 100%;
   padding: 176px 0 180px 240px;
+  scroll-snap-align: center;
 }
 .services{
   display: flex;
@@ -289,22 +204,21 @@
 }
 .services-pic-img{
   width: 707px;
+  margin: 224px 50px 0 40px;
   border-radius: 1em;
-  /* box-shadow: 0px 0px 5px 5px #289FED, 208px 220px 717px 127px #5FB8FF, 204px 50px 6px 0px rgba(0,0,0,0) ; */
   box-shadow: -13px 13px 0px 0px #289FED,-157px 58px 92px 40px rgba(10,171,244,0.3);
   -webkit-box-shadow:-13px 13px 0px 0px #289FED, -157px 58px 92px 40px rgba(10,171,244,0.3);
   -moz-box-shadow:-13px 13px 0px 0px #289FED, -157px 58px 92px 40px rgba(10,171,244,0.3);
 }
 
-
-
 /************ fourth-section ***************/
 
-
 .fourth-section{
+  background-color: #fff;
   max-width: 1920px;
   width: 100%;
-  padding: 176px 0 170px;
+  padding: 120px 0 170px;
+  scroll-snap-align: center;
 }
 .projects{
   width: 100%;
@@ -317,8 +231,8 @@
   font-size: 32px;
 }
 
-
 /**************** Project Swiper ****************/
+
 .project-pictures{
   padding: 0 0 65px 240px;
   margin-top: -160px
@@ -331,8 +245,6 @@
 .slide2 {
   text-align: center;
   font-size: 18px;
-  /* margin-top: 40px; */
-  /* background: rgb(134, 115, 4); */
   border-radius: 4%;
 
   /* Center slide text vertically */
@@ -374,7 +286,7 @@
 }
 .img-text{
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   background-color: #ffffffde;
   width: 95%;
   padding: 30px;
@@ -395,8 +307,6 @@
   font-weight: 900;
   transition: 0.5s;
 }
-
-
 .other-projects{
   display: flex;
   justify-content: flex-end;
@@ -413,10 +323,11 @@
 /********** Fifth Section ***********/
 
 .fifth-section{
+  background-color: #fff;
   max-width: 1920px;
   width: 100%;
   padding: 0 0 170px 240px;
-  margin-bottom: 180px;
+  scroll-snap-align: center;
 }
 .partners{
   display: flex;
@@ -439,18 +350,14 @@
   width: 707px;
 }
 
-
-
 /************ sixth-section, Footer **************/
-
 
 .sixth-section{
   max-width: 1920px;
   width: 100%;
-  padding-top: 271px;
-  padding-bottom: 20px;
+  padding: 271px 0 20px 240px;
   background-color:#0A22F4;
-  /* height: 100vh; */
+  scroll-snap-align: center;
 }
 .footer{
   max-width: 1443px;
@@ -479,6 +386,7 @@
 .tel-mail{
   display: flex;
   justify-content: start;
+  flex-wrap: wrap;
 }
 .tel,.mail{
   display: flex;
@@ -488,9 +396,10 @@
 .tel{
   margin-right: 30px;
 }
-
 .number,.mail-t{
   color: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .tel-icon,.mail-icon{
   width: 70px;
