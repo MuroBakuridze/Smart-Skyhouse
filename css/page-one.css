@@ -104,6 +104,7 @@ body{
   background-image: url(/images/homepage/leftPic.svg);
   background-repeat: no-repeat;
 	background-position: center;
+  background-size: 100% !important;
 }
 .slide-two{
   max-width: 948px !important;
@@ -111,14 +112,16 @@ body{
   background-image: url(/images/homepage/rightPic.svg);
   background-repeat: no-repeat;
 	background-position: center;
+  background-size: 100% !important;
 }
 .slide-three{
   margin-left: -40px;
   max-width: 707px !important;
-  width: 100%;
+  width: 100% !important;
   background-image: url(/images/homepage/leftPic.svg);
   background-repeat: no-repeat;
 	background-position: center;
+  background-size: 50% !important;
 }
 .pic1,.pic3 {
   display: block;
@@ -549,6 +552,24 @@ body{
   .partners-posts{
    margin-right: 80px;
   }
+  .main-section{
+    height: 100%;
+  }
+  .container1{
+    margin-top: 56px !important;
+  }
+  .slide-one{
+    max-width: 40% !important;
+  }
+  .slide-two{
+    max-width: 55% !important;
+  }
+  .slide-three{
+    max-width: 40% !important;
+    margin-left: 2px;
+    background-size: 100% !important;
+  }
+
 }
 @media screen and (max-width: 1525px){
   .head{
