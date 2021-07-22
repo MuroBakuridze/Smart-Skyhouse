@@ -8,26 +8,23 @@ body{
   height: 100%;
   overflow-y: scroll; 
   scroll-behavior: smooth;
-  /* scroll-snap-type: y mandatory; */
 }
 .main-section {
   max-width: 1920px;
   width: 100%;
-  height: 100%;
+  height: 1080px;
   background-color: #0020F4;
-  padding-left: 240px;
+  padding: 0 0 250px 240px;
   scroll-snap-align: center;
   overflow: hidden;
 }
 .head {
   position: fixed;
-  /* background-color: rgba(0, 122, 255, 0.9); */
   background-color: #0020F4;
   top: 0px;
   left: 0px;
   right: 0px;
-  padding: 40px 0 12px 240px;
-  /* border-bottom: 1px solid #fff; */
+  padding: 40px 240px;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
@@ -53,21 +50,31 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-btn {
-  margin: 0 43px;
+  margin: 0 ;
+  padding: 18px 36px;
+  border-radius: 30px;
 }
 .nav-txt {
   font-size: 16px;
   color: #ffffff;
+  font-weight: bolder;
 }
+.nav-btn:hover{
+  background-color: white;
 
+}
+.nav-btn:hover .nav-txt{
+  color: black;
+}
 /*********** Slider 1 ************/
 
 .container1 {
-  margin: 210px 0px -65px 0px !important;
+  margin: 216px 0px 65px 0px !important;
   width: 100%;
-  height: 100%;
+  height: 800px !important;
 }
 .slides {
   left: -50px !important;
@@ -90,7 +97,29 @@ body{
   align-items: center;
   margin-bottom: 65px !important;
 }
-
+.slide-one{
+  margin-left: 50px;
+  max-width: 707px !important;
+  width: 100% !important;
+  background-image: url(/images/homepage/leftPic.svg);
+  background-repeat: no-repeat;
+	background-position: center;
+}
+.slide-two{
+  max-width: 948px !important;
+  width: 100% !important;
+  background-image: url(/images/homepage/rightPic.svg);
+  background-repeat: no-repeat;
+	background-position: center;
+}
+.slide-three{
+  margin-left: -40px;
+  max-width: 707px !important;
+  width: 100%;
+  background-image: url(/images/homepage/leftPic.svg);
+  background-repeat: no-repeat;
+	background-position: center;
+}
 .pic1,.pic3 {
   display: block;
   height: 100%;
@@ -103,7 +132,7 @@ body{
 .swiper-button-next{
     margin-top: 0px;
     position: absolute;
-    top: 80% !important;
+    top: 97.7% !important;
     left: 39% !important;
     width: 45px;
     height: 45px;
@@ -111,7 +140,7 @@ body{
 }
 .swiper-button-prev{
       position: absolute;
-      top: 80% !important;
+      top: 97.7% !important;
       left: 41% !important;
       width: 45px;
       height: 45px;
@@ -124,13 +153,15 @@ body{
 .pagination1{
   position: absolute !important;
   left: -49% !important;
-  top: 76% !important;
+  top: 95% !important;
 }
 .swiper-pagination-bullet{
   width: 10px !important;
   height: 10px !important;
 }
-
+.swiper-pagination-bullet:root{
+  color: #fff !important;
+}
 /********** Second Section **************/
 
 .second-section{
@@ -152,7 +183,8 @@ body{
   justify-content: center;
 }
 .about-pic-img{
-  width: 707px;
+  max-width: 707px;
+  width: 100%;
   border-radius: 1em;
   margin: 224px 0 200px 140px;
   position: relative;
@@ -203,7 +235,8 @@ body{
   font-size: 16px;
 }
 .services-pic-img{
-  width: 707px;
+  max-width: 707px;
+  width: 100%;
   margin: 224px 50px 0 40px;
   border-radius: 1em;
   box-shadow: -13px 13px 0px 0px #289FED,-157px 58px 92px 40px rgba(10,171,244,0.3);
@@ -217,10 +250,12 @@ body{
   background-color: #fff;
   max-width: 1920px;
   width: 100%;
-  padding: 120px 0 170px;
+  padding-top: 120px;
+  padding-bottom: 70px;
   scroll-snap-align: center;
 }
 .projects{
+  max-width: 1920px;
   width: 100%;
   height: 308px;
   background-color: #0A22F4;
@@ -326,8 +361,9 @@ body{
   background-color: #fff;
   max-width: 1920px;
   width: 100%;
-  padding: 0 0 170px 240px;
+  padding: 200px 0 170px 240px;
   scroll-snap-align: center;
+
 }
 .partners{
   display: flex;
@@ -367,7 +403,7 @@ body{
   justify-content: space-between;
 }
 .footer-contacts,.contact-form{
-  width: 50%;
+  width: 100%;
 }
 .footer-cont{
   font-size: 32px;
@@ -420,7 +456,7 @@ body{
 }
 #name,#email,#tel{
   background-color: #0A22F4;
-  width: 60%;
+  width: 100%;
   height: 61px;
   position: relative;
   margin-bottom: 20px;
@@ -435,7 +471,7 @@ body{
 }
 #text{
   background-color: #0A22F4;
-  width: 60%;
+  width: 100%;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -484,4 +520,50 @@ body{
 }
 .end-txt-one{
   margin-right: 30px;
+}
+
+
+/*///////////////-Responsive-///////////*/
+
+@media screen and (max-width: 1700px){
+  .about-pic-img{
+    width: 80%;
+    margin: 224px 80px 200px 40px;
+  }
+  .services-pic-img{
+    width: 80%;
+  }
+  .text-container{
+    margin-right: 80px;
+  }
+  #name,#email,#tel,#text{
+    width: 80%;
+    margin-right: 80px;
+  }
+  .button{
+    margin-right: 80px;
+  }
+  .rights{
+    padding-right: 80px;
+  }
+  .partners-posts{
+   margin-right: 80px;
+  }
+}
+@media screen and (max-width: 1525px){
+  .head{
+    padding:40px 140px;
+  }
+  .second-section,.third-section,.fifth-section,.sixth-section{
+    padding: 180px 140px;
+  }
+  .container1{
+    margin-left: -100px !important;
+  }
+  .projects,.project-pictures{
+    padding-left: 140px;
+  }
+  .other-projects{
+    padding-right: 140px;
+  }
 }

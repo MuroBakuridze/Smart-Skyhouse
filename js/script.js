@@ -9,7 +9,7 @@ var swiper = new Swiper(".mySwiper2", {
 
 
 var swiper1 = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: 1.5,
   spaceBetween: 50,
   slidesPerGroup: 1,
   loop: false,
