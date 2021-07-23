@@ -1,3 +1,5 @@
+//// First swiper
+
 var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 3.5,
   spaceBetween: 25,
@@ -7,6 +9,7 @@ var swiper = new Swiper(".mySwiper2", {
   },
 });
 
+//?? Second swiper
 
 var swiper1 = new Swiper(".mySwiper", {
   slidesPerView: 1.5,
@@ -24,4 +27,16 @@ var swiper1 = new Swiper(".mySwiper", {
   },
 });
 
+//// Hamburger Toggler
 
+const hamburger = document.querySelector('.hamburger');
+const navigation = document.querySelector('.navigation');
+
+
+hamburger.addEventListener('click', () =>{
+  navigation.classList.toggle("open");
+})
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
