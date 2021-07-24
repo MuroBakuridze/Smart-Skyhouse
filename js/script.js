@@ -1,12 +1,18 @@
 //// First swiper
 
 var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 3.5,
+  slidesPerView: 2,
   spaceBetween: 25,
   pagination: {
     el: ".swp1",
     clickable: true,
   },
+  breakpoints: {
+    850: {
+      slidesPerView: 3.5,
+      spaceBetweenSlides: 25,
+  }
+  }
 });
 
 //?? Second swiper
